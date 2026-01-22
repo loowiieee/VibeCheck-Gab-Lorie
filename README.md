@@ -13,8 +13,13 @@ API runs at http://localhost:3000
 API Endpoints:
 
 GET /api/fortune – Get a random fortune
+
 GET /api/joke – Get a random joke
+
 GET /api/vibe?mood=happy|tired|stressed – Get mood-based response
+
 POST /api/smash – Increment smash counter
+
 GET /api/smashes – Get current smash count
+
 GET /api/secret?code=411L – Access secret message
