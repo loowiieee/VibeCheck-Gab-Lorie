@@ -25,6 +25,8 @@ const fortunes = [
   "Your next commit will be clean and meaningful.",
   "A bug will disappear when you add one console.log().",
   "You passed the vibe check today. 😎",
+  "You'll encounter luck when you work hard today.",
+  "You'll get promoted after finishing your biggest project!",
 ];
 
 const jokes = [
