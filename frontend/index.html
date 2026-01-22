@@ -1,26 +1,46 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>VibeCheck 411L</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>VibeCheck 411L</h1>
-  <p>Click buttons. This page will fetch data from your Node.js API.</p>
 
-  <div>
-    <button id="btnFortune">🔮 Fortune</button>
-    <button id="btnJoke">😂 Joke</button>
-    <button data-mood="happy" class="btnMood">😄 Happy</button>
-    <button data-mood="tired" class="btnMood">🥱 Tired</button>
-    <button data-mood="stressed" class="btnMood">😵‍💫 Stressed</button>
-    <button id="btnSmash">💥 SMASH!</button>
-    <button id="btnSecret">🕵️ Secret</button>
-  </div>
+  <main class="app">
+    <header class="header">
+      <h1>VibeCheck 411L</h1>
+      <p>Developer mood, fortune, and sanity checker</p>
+    </header>
 
-  <h2>Output</h2>
-  <pre id="out">Ready...</pre>
+    <section class="card controls">
+      <h2>Actions</h2>
+
+      <div class="button-grid">
+        <button id="btnFortune">🔮 Fortune</button>
+        <button id="btnJoke">😂 Joke</button>
+
+        <button data-mood="happy" class="btnMood">😄 Happy</button>
+        <button data-mood="tired" class="btnMood">🥱 Tired</button>
+        <button data-mood="stressed" class="btnMood">😵‍💫 Stressed</button>
+
+        <button id="btnSmash" class="danger">💥 SMASH</button>
+        <button id="btnSecret" class="ghost">🕵️ Secret</button>
+      </div>
+    </section>
+
+    <section class="card output">
+      <h2>Output</h2>
+      <pre id="out">Ready...</pre>
+    </section>
+  </main>
+
+  <footer>
+    <p>CPE 411L • Node.js + Express API</p>
+  </footer>
 
   <script src="app.js"></script>
 </body>

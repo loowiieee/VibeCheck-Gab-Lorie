@@ -1,0 +1,118 @@
+:root {
+  --bg: #0f1220;
+  --card: #181c2f;
+  --accent: #6c7cff;
+  --accent-soft: rgba(108, 124, 255, 0.15);
+  --text: #e6e8f0;
+  --muted: #a0a4c0;
+  --danger: #ff6b6b;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: radial-gradient(circle at top, #1b1f3b, var(--bg));
+  color: var(--text);
+  min-height: 100vh;
+}
+
+.app {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.header h1 {
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.header p {
+  color: var(--muted);
+  margin-top: 0.5rem;
+}
+
+.card {
+  background: linear-gradient(
+    180deg,
+    rgba(255,255,255,0.02),
+    rgba(255,255,255,0)
+  );
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(6px);
+}
+
+.card h2 {
+  margin-top: 0;
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: var(--muted);
+}
+
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 0.75rem;
+}
+
+button {
+  background: var(--accent-soft);
+  color: var(--text);
+  border: 1px solid rgba(255,255,255,0.12);
+  padding: 0.7rem 1rem;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  background: var(--accent);
+}
+
+button:active {
+  transform: translateY(0);
+}
+
+button.danger {
+  background: rgba(255,107,107,0.15);
+}
+
+button.danger:hover {
+  background: var(--danger);
+}
+
+button.ghost {
+  background: transparent;
+}
+
+.output pre {
+  background: #0b0e1a;
+  color: #7cffd4;
+  padding: 1rem;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  overflow-x: auto;
+  min-height: 120px;
+}
+
+footer {
+  text-align: center;
+  color: var(--muted);
+  font-size: 0.8rem;
+  margin-top: 2rem;
+}
